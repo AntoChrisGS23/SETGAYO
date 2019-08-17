@@ -1,0 +1,88 @@
+// General
+* {
+    -webkit-font-smoothing: antialiased;
+    /* No bold in Mac. */
+    box-sizing: border-box;
+    font-weight: normal;
+    &::before, &::after{box-sizing: border-box;}
+    &:focus {outline: 2px solid orange;}
+}
+html, body{height: 100%;}
+
+body {
+    //font-family: $fonts;
+    font-size: 16px;
+    //line-height: 1.15;
+}
+  
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    margin: 0;
+}
+
+svg:not(:root) {overflow: hidden;}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+  
+a {
+    word-wrap: break-word;
+    color: $color_blue-light;
+    -webkit-tap-highlight-color: transparent;
+    &:hover{text-decoration: none;}
+}
+
+input {border: none;}
+
+p {
+    margin: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+hr{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+}
+
+.icon {
+    display: inline-block;
+    line-height: 0.8;
+    
+    > svg {
+        display: inline-block;
+        font-size: inherit;
+        width: 1em;
+        height: 1em;
+        overflow: visible;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+}
+
+.icons {display: none;}
+
+.site-slide {
+    height: auto;
+    overflow-x: hidden;
+    .site__body{
+        overflow-x: hidden;
+    }
+    &.open-slide{
+        overflow-y: hidden;
+    }
+}

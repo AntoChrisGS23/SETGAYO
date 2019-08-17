@@ -1,0 +1,10 @@
+extends ../templates/main-template
+
+block title
+    -var project = {name: brand, section: ''}
+    title= project.name +' | ' + project.section
+
+block description
+    meta(name='description', content='Page description')
+block content
+    include ../includes/home

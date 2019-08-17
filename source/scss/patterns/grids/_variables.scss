@@ -1,0 +1,31 @@
+// Grid columns
+$grid-columns:               12 !default;
+$grid-gutter-width:          30px !default;
+
+// Options
+$enable-grid-classes:        true !default;
+
+// Grid beakpoints
+$grid-breakpoints: () !default;
+$grid-breakpoints: map-merge(
+    (
+        xs: $mp,
+        sm: $ml,
+        md: $tp,
+        lg: $tl,
+        xl: $d
+    ),
+    $grid-breakpoints
+);
+
+//Grid containers
+$container-max-widths: () !default;
+$container-max-widths: map-merge(
+    (
+        sm: $max-sm,
+        md: $max-md,
+        lg: $max-lg,
+        xl: $max-xl
+    ),
+    $container-max-widths
+);

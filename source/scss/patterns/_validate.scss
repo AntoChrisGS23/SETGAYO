@@ -1,0 +1,104 @@
+.validate {
+    &__item{
+        &.error-zipcode{
+            &.show-error{
+                .forms__control {
+                    border-width: 2px;
+                    border-color: $color_red;
+                    &:focus {
+                        color: #495057;
+                        background-color: #fff;
+                        border-width: 2px;
+                        border-color: $color_red;
+                        outline: 0;
+                        box-shadow: 0 0 0 0.2rem rgba(235, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+        &.validate__error{
+            margin-bottom: 5px;
+        }
+        span.validate__error{
+            color: $color_white;
+            font-size: 12px;
+            font-family: $fonts;
+            display: inline-block;
+            margin-top: 5px;
+            line-height: 1.36;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            padding: 4px 8px;
+            background-color: $color_red;
+        }
+    }
+    &__success{
+        > label {
+            color: #fff;
+        }
+        .quote__label-check{
+            display: inline-block;
+        }
+        .forms__control {
+            border-width: 2px;
+            border-color: $color_green;
+            &:focus {
+                color: #000;
+                background-color: #fff;
+                border-width: 2px;
+                border-color: $color_green;
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgba(78, 181, 0, 0.25);
+            }
+        }
+    }
+    &__error{
+        > label {
+            color: #fff;
+        }
+        .forms__control {
+            border-width: 2px;
+            border-color: $color_red;
+            &:focus {
+                color: #000;
+                background-color: #fff;
+                border-width: 2px;
+                border-color: $color_red;
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgba(235, 0, 0, 0.25);
+            }
+        }
+    }
+    &__amp{
+        &-item{
+            .user-invalid{
+                border-width: 2px;
+                border-color: $color_red;
+                &:focus {
+                    color: #495057;
+                    background-color: #fff;
+                    border-width: 2px;
+                    border-color: $color_red;
+                    outline: 0;
+                    box-shadow: 0 0 0 0.2rem rgba(235, 0, 0, 0.25);
+                }
+            }
+        }
+        &-error{
+            color: $color_white;
+            font-size: 12px;
+            font-family: $fonts;
+            display: inline-block;
+            margin-top: 5px;
+            line-height: 1.36;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            padding: 4px 8px;
+            background-color: $color_red;
+        }
+    }
+}

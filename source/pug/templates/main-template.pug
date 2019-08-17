@@ -1,0 +1,18 @@
+include ../includes/variables
+doctype html
+html.site-slide(lang='es')
+    head
+        block title
+        meta(charset='utf-8')
+        block description
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        include ../includes/favicon
+        link(rel='stylesheet', href='css/main.css', type="text/css")
+        link(rel='stylesheet', href='plugins/fontawesome/css/all.min.css', type="text/css")
+    body.body
+        include ../includes/header
+        main.site-wrapper
+            block content
+        include ../includes/footer
+        script(src='js/main.js')
+        block other-scripts

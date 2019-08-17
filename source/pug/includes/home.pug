@@ -1,0 +1,190 @@
+section.servicio
+    h2.visually-hidden Nuevo Servicio
+    .container
+        .row
+            .col-sm-12.col-md-12.col-lg-12
+                h2.set__title Nuevo Servicio
+                .set__nav-tabs
+                    ul.nav.nav-tabs
+                        li.nav-item
+                            a.nav-link(href="#") Datos básicos
+                        li.nav-item
+                            a.nav-link(href="#") Contactos
+                        li.nav-item
+                            a.nav-link(href="#") Hoteles
+                        li.nav-item
+                            a.nav-link(href="#") Integraciones
+                        li.nav-item
+                            a.nav-link.active(href="#") Guías
+                        li.nav-item
+                            a.nav-link(href="#") Restaurantes
+                form.form
+                    .set__nav-panel--body
+                        .form-row.set__box
+                            label.set__box-label Calificación
+                            .col-sm-12.col-md-12.col-lg-6
+                                .form-row
+                                    .form-group.col-sm-12.col-md-4.col-lg-4
+                                        label(for="estado") Estado
+                                        select.form-control#estado(name="estado", required)
+                                            option(value="") - Seleccione -
+                                            option(value="Vetado") Vetado
+                                    .form-group.col-sm-12.col-md-4.col-lg-4
+                                        label(for="tipo") Tipo
+                                        select.form-control#tipo(name="tipo", required)
+                                            option(value="") - Seleccione -
+                                            option(value="Mercado") Mercado
+                                            option(value="País") País
+                                    .form-group.col-sm-12.col-md-4.col-lg-4
+                                        label(for="valor") Valor
+                                        input.form-control#valor(type="text" name="valor", required)
+                                    .form-group.col-sm-12.col-md-12.col-lg-12
+                                        textarea.form-control.frm__calificacion-textarea#observacion(name="observacion", cols="30", rows="4", placeholder="Ingrese alguna observación...")
+                                .form-row
+                                    .col-sm-12.col-md-12.col-lg-12.set__button-add
+                                        button.btn.btn-success(type="submit")
+                                            i.fas.fa-plus
+                                            |  Agregar
+                            .col-sm-12.col-md-12.col-lg-6
+                                .set__table.table-responsive
+                                    table.table.table-striped.table-hover
+                                        thead
+                                            tr
+                                                th(scope="col", width="40") #
+                                                th(scope="col") Estado
+                                                th(scope="col") Tipo
+                                                th(scope="col") Valor
+                                                th(scope="col") Acciones
+                                        tbody
+                                            tr
+                                                th(scope="row") 1
+                                                td Vetado
+                                                td Mercado
+                                                td Asiático
+                                                td
+                                                    button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
+                                                    button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                                            tr
+                                                th(scope="row") 2
+                                                td Vetado
+                                                td País
+                                                td Perú
+                                                td
+                                                    button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
+                                                    button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                                            tr
+                                                th(scope="row") 3
+                                                td Vetado
+                                                td Mercado
+                                                td Asiático
+                                                td
+                                                    button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
+                                                    button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                        .form-row.set__box
+                            label.set__box-label Idiomas
+                            .col-sm-12.col-md-12.col-lg-12
+                                .form-row
+                                    .form-group.col-sm-6.col-md-6.col-lg-3
+                                        label(for="idioma") Idioma
+                                        select.form-control#idioma(name="idioma", required)
+                                            option(value="") - Seleccione -
+                                            option(value="Inglés") Inglés
+                                            option(value="Aleman") Aleman
+                                    .form-group.col-sm-6.col-md-6.col-lg-3
+                                        label(for="nivel") Nivel
+                                        select.form-control#nivel(name="nivel", required)
+                                            option(value="") - Seleccione -
+                                            option(value="Nativo") Nativo
+                                            option(value="Básico") Básico
+                                    .form-group.col-sm-6.col-md-6.col-lg-3
+                                        label(for="fecha") Fecha
+                                        .input-group
+                                            input.form-control#fecha(type="date" name="fecha", required)
+                                            .input-group-append
+                                                .input-group-text: i.far.fa-calendar-alt
+                                    .form-group.col-sm-6.col-md-6.col-lg-3
+                                        label(for="entrevistador") Entrevistador
+                                        select.form-control#entrevistador(name="entrevistador", required)
+                                            option(value="") - Seleccione -
+                                            option(value="Joshiro") Joshiro
+                                .form-row
+                                    .col-sm-12.col-md-12.col-lg-12.set__button-add
+                                        button.btn.btn-success(type="submit")
+                                            i.fas.fa-plus
+                                            |  Agregar
+                                .form-row
+                                    .col-sm-12.col-md-12.col-lg-12.set__table
+                                        .table-responsive
+                                            table.table.table-bordered.table-striped.table-hover
+                                                thead
+                                                    tr
+                                                        th(scope="col", width="40") #
+                                                        th(scope="col") Idioma
+                                                        th(scope="col") Nivel
+                                                        th(scope="col") Fecha
+                                                        th(scope="col") Entrevistador
+                                                        th(scope="col") Acciones
+                                                tbody
+                                                    tr
+                                                        th(scope="row") 1
+                                                        td Ingles
+                                                        td Nativo
+                                                        td 17/08/2019
+                                                        td Joshiro
+                                                        td
+                                                            button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
+                                                            button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                                                    tr
+                                                        th(scope="row") 2
+                                                        td Aleman
+                                                        td Básico
+                                                        td 17/08/2019
+                                                        td Joshiro
+                                                        td
+                                                            button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
+                                                            button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                        .form-row
+                            .col-sm-12.col-md-12.col-lg-12
+                                .form-row
+                                    .col-sm-12.col-md-12.col-lg-6
+                                        .form-row.set__box
+                                            label.set__box-label Especialidades
+                                            .col-sm-12.col-md-6.col-lg-6
+                                                .set__frm-check
+                                                    .set__frm-check--box.custom-control.custom-checkbox
+                                                        input.custom-control-input#especialidad1(type="checkbox", name="especialidad", required)
+                                                        label.custom-control-label(for="especialidad1") Especialidad 1
+                                                    .set__frm-check--box.custom-control.custom-checkbox
+                                                        input.custom-control-input#especialidad2(type="checkbox", name="especialidad", required)
+                                                        label.custom-control-label(for="especialidad2") Especialidad 2
+                                                    .set__frm-check--box.custom-control.custom-checkbox
+                                                        input.custom-control-input#especialidad3(type="checkbox", name="especialidad", required)
+                                                        label.custom-control-label(for="especialidad3") Especialidad 3
+                                            .col-sm-12.col-md-6.col-lg-6
+                                                .set__frm-check
+                                                    .set__frm-check--box.custom-control.custom-checkbox
+                                                        input.custom-control-input#especialidad4(type="checkbox", name="especialidad", required)
+                                                        label.custom-control-label(for="especialidad4") Especialidad 4
+                                                    .set__frm-check--box.custom-control.custom-checkbox
+                                                        input.custom-control-input#especialidad5(type="checkbox", name="especialidad", required)
+                                                        label.custom-control-label(for="especialidad5") Especialidad 5
+                                                    .set__frm-check--box.custom-control.custom-checkbox
+                                                        input.custom-control-input#especialidad6(type="checkbox", name="especialidad", required)
+                                                        label.custom-control-label(for="especialidad6") Especialidad 6
+                                    .col-sm-12.col-md-12.col-lg-6
+                                        .form-row.set__box
+                                            label.set__box-label Documentos
+                                            .form-group.col-sm-12.col-md-12.col-lg-12
+                                                label(for="carnet") Nro. Carnet Guía
+                                                input.form-control#carnet(type="text", name="carnet", required)
+                                            .form-group.col-sm-12.col-md-12.col-lg-12
+                                                label(for="dni") DNI
+                                                input.form-control#dni(type="text", name="dni", required)
+                    .set__nav-panel--footer
+                        .form-row
+                            .col-xs-6.col-sm-6.col-md-6.col-lg-6.set__button-close
+                                button.btn.btn-danger(type="button") Cerrar
+                            .col-xs-6.col-sm-6.col-md-6.col-lg-6.set__button-submit
+                                button.btn.btn-primary(type="submit")
+                                    i.fas.fa-check
+                                    |  Grabar

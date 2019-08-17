@@ -1,0 +1,51 @@
+// Fonts
+$fonts:                         'Raleway';
+
+// Colors
+$color_green:                   #4eb500;
+$color_green-light:             #96e800;
+$color_blue:                    #0266ee;
+$color_blue-2:                  #007cff;
+$color_blue_light:              #006ff9;
+$color_azure:                   #0090ea;
+$color_black:                   #000000;
+$color_black-s1:                #0e0e0e;
+$color_black-s2:                #131313;
+$color_black-l1:                #282828;
+$color_black-l2:                #252525;
+$color_white:                   #ffffff;
+$color_white-2:                 #eaeaea;
+$color_white-3:                 #d2d2d2;
+$color_white-4:                 #828282;
+$color_red:                     #eb0000;
+$color_red-1:                   #ed3237;
+
+// Messures
+
+// Breakpoints
+$mobile-portrait:                0;
+$mobile-lanscape:                576px;
+$tablet-portrait:                768px;
+$tablet-lanscape:                992px;
+$desktop:                        1200px;
+$desktop-lg:                     1400px;
+
+$mp:                             $mobile-portrait;
+$ml:                             $mobile-lanscape;
+$tp:                             $tablet-portrait;
+$tl:                             $tablet-lanscape;
+$d:                              $desktop;
+$lg:                             $desktop-lg;
+
+// Container
+//$container-mobile:               540px;
+//$container-tablet-portrait:      975px;
+//$container-tablet-portrait:      750px;
+// $container-tablet-lanscape:      1182px;
+//$container-tablet-lanscape:      970px;
+//$container-desktop:              1170px;
+
+//$max-sm:                         $container-mobile;
+//$max-md:                         $container-tablet-portrait;
+//$max-lg:                         $container-tablet-lanscape;
+//$max-xl:                         $container-desktop;

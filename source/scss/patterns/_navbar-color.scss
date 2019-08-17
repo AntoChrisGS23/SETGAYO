@@ -1,0 +1,95 @@
+.navbar {
+    // COLOR DEFAULT
+    &__default {
+        background-color: $color_white;
+        border-bottom: solid 1px #dfdfdf;
+        .navbar {
+            &__header {
+                @media (max-width: 991px) {
+                    background-color: $color_white;
+                }
+                &.nav__bottom {
+                    border-bottom: solid 1px #dfdfdf;
+                }
+            }
+            &__menu {
+                @media (max-width: 991px) {
+                    border-bottom: solid 1px #dfdfdf;
+                    border-top: solid 1px #dfdfdf;
+                }
+                &.navbar__dropdown {
+                    .menu__dropdown {
+                        > a {
+                            &::before {
+                                border-top: solid 5px #6a6a6a;
+                                border-left: solid 5px transparent;
+                                border-right: solid 5px transparent;
+                            }
+                        }
+                        >.submenu__dropdown {
+                            border: solid 1px #efefef;
+                            background-color: $color_white;
+                            > .submenu__item {
+                                > a {
+                                    border-bottom: solid 1px #eee;
+                                }
+                                &:last-child{
+                                    > a {
+                                        border-bottom: solid 0px #eee;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.open {
+                        > a {
+                            color: $color_blue;
+                        }
+                    }
+                }
+
+                // BOTTOM
+                &.nav__bottom {
+                    .menu-list {
+                        .menu {
+                            &__item{
+                                &:last-child {
+                                    .menu__link {
+                                        border-right: solid 1px #dfdfdf;
+                                    }
+                                }
+                            }
+                            &__link {
+                                border-left: solid 1px #dfdfdf;
+                                @media (max-width: 991px){
+                                    border-bottom: solid 1px #dfdfdf;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu{
+            &-list{
+                @media (max-width: 991px){
+                    background: $color_white;
+                }
+                li{
+                    a{
+                        color: $color_black;
+                        &:hover{
+                            color: $color_blue;
+                        }
+                        &:focus{
+                            color: $color_blue;
+                        }
+                        @media (max-width: 991px){
+                            border-bottom: solid 1px #efefef;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
