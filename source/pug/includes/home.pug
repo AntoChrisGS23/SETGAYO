@@ -42,12 +42,12 @@ section.servicio
                                         textarea.form-control.frm__calificacion-textarea#observacion(name="observacion", cols="30", rows="4", placeholder="Ingrese alguna observación...")
                                 .form-row
                                     .col-sm-12.col-md-12.col-lg-12.set__button-add
-                                        button.btn.btn-success(type="submit")
+                                        button.btn.btn-success#addCalif(type="button")
                                             i.fas.fa-plus
                                             |  Agregar
                             .col-sm-12.col-md-12.col-lg-6
                                 .set__table.table-responsive
-                                    table.table.table-striped.table-hover
+                                    table.table.table-striped.table-hover#tableCalif
                                         thead
                                             tr
                                                 th(scope="col", width="40") #
@@ -56,30 +56,22 @@ section.servicio
                                                 th(scope="col") Valor
                                                 th(scope="col") Acciones
                                         tbody
-                                            tr
+                                            tr#row
                                                 th(scope="row") 1
                                                 td Vetado
                                                 td Mercado
                                                 td Asiático
                                                 td
                                                     button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
-                                                    button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
-                                            tr
+                                                    button.btn.btn-danger.btn_remove(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                                            tr#row
                                                 th(scope="row") 2
                                                 td Vetado
                                                 td País
                                                 td Perú
                                                 td
                                                     button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
-                                                    button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
-                                            tr
-                                                th(scope="row") 3
-                                                td Vetado
-                                                td Mercado
-                                                td Asiático
-                                                td
-                                                    button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
-                                                    button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                                                    button.btn.btn-danger.btn_remove(type="button", title="Eliminar"): i.fas.fa-trash-alt
                         .form-row.set__box
                             label.set__box-label Idiomas
                             .col-sm-12.col-md-12.col-lg-12
@@ -109,13 +101,13 @@ section.servicio
                                             option(value="Joshiro") Joshiro
                                 .form-row
                                     .col-sm-12.col-md-12.col-lg-12.set__button-add
-                                        button.btn.btn-success(type="submit")
+                                        button.btn.btn-success#addIdi(type="button")
                                             i.fas.fa-plus
                                             |  Agregar
                                 .form-row
                                     .col-sm-12.col-md-12.col-lg-12.set__table
                                         .table-responsive
-                                            table.table.table-bordered.table-striped.table-hover
+                                            table.table.table-striped.table-hover#tableIdi
                                                 thead
                                                     tr
                                                         th(scope="col", width="40") #
@@ -125,7 +117,7 @@ section.servicio
                                                         th(scope="col") Entrevistador
                                                         th(scope="col") Acciones
                                                 tbody
-                                                    tr
+                                                    tr#rowId1
                                                         th(scope="row") 1
                                                         td Ingles
                                                         td Nativo
@@ -133,8 +125,8 @@ section.servicio
                                                         td Joshiro
                                                         td
                                                             button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
-                                                            button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
-                                                    tr
+                                                            button.btn.btn-danger.btn_remove2(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                                                    tr#rowId1
                                                         th(scope="row") 2
                                                         td Aleman
                                                         td Básico
@@ -142,7 +134,7 @@ section.servicio
                                                         td Joshiro
                                                         td
                                                             button.btn.btn-warning(type="button", title="Editar"): i.fas.fa-pencil-alt
-                                                            button.btn.btn-danger(type="button", title="Eliminar"): i.fas.fa-trash-alt
+                                                            button.btn.btn-danger.btn_remove2(type="button", title="Eliminar"): i.fas.fa-trash-alt
                         .form-row
                             .col-sm-12.col-md-12.col-lg-12
                                 .form-row
